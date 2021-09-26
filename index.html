@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Shohei's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet"  href="style.scss">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
+
+</head>
+
+<body>
+    <!-------------------------------------------------- ヘッダー----------------------- -->
+    <header class="header">
+        <div class="header__bg">
+            <div class="header__cat">
+                <div class="header__logo">
+                    <a href="#">Shohei's Portfolio</a>
+                </div>
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger">
+                    <span class="hamburger__icon">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </label>
+                <nav class="header__navi">
+                    <div class="header__navi__wrap">
+                        <ul class="header__navi__list">
+                            <li class="header__navi__item"><a href="#"><span>TOP</span></a></li>
+                            <li class="header__navi__item"><a href="#skills"><span>SKILLS</span></a></li>
+                            <li class="header__navi__item"><a href="#about"><span>ABOUT</span></a></li>
+                            <li class="header__navi__item"><a href="#work"><span>WORK</span></a></li>
+                            <li class="header__navi__item"><a href="#contact"><span>CONTACT</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!------------------------------------------- メインカテゴリー ------------------------------------->
+        <section class="mainKv">
+            <h1 class="mainKv__title">Knowledge is Power</h1>
+        </section>
+
+        <!----------------------------------------- メインコンテンツエリア ---------------------------------------------------->
+        <section class="mainContent">
+
+            <!----------------------------------------------------- SKILLS--------------------------------------------------- -->
+            <section class="skills mainContent__cat">
+                    <div class="mainContent__inner">
+                        <h2 class="mainContent__title" id="skills">SKILLS</h2>
+                        <div class="skills__cat">
+                            <div class="skills__img">
+                                <img class="skills__img__logo" src="image/icons8-html-5-144.png" alt="htmlのアイコン">
+                                <p class="skills__img__text">HTML</p>
+                            </div>                    
+                            <div class="skills__img">
+                                <img class="skills__img__logo" src="image/icons8-css3-144.png" alt="cssのアイコン">
+                                <p class="skills__img__text">CSS</p>
+                            </div>
+                            <div class="skills__img">
+                                <img class="skills__img__logo" src="image/icons8-javascript-144.png" alt="javascriptのアイコン">
+                                <p class="skills__img__text">Javascript</p>
+                            </div>
+                            <div class="skills__img">
+                                <img class="skills__img__logo" src="image/icons8-jquery-150.png" alt="jqueryのアイコン">
+                                <p class="skills__img__text">Jquery</p>
+                            </div>
+                            <div class="skills__img">
+                                <img class="skills__img__logo" src="image/icons8-sass-144.png" alt="sassのアイコン">
+                                <p class="skills__img__text">SASS</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+                <!--------------------------- About Section --------------------------------- -->
+            <section class="about mainContent__cat">
+                <div class="about-area">
+                    <h2 class="mainContent__title" id="about">ABOUT</h2>
+                    <div class="profile-wrapper">
+                        <div class="profile">
+                            <img src="image/IMG_4831.jpg" alt="プロフィール写真" class="photo">
+                            <div class="profile-heading">
+                                <h1>田尾 翔平</h1>
+                                <a href="https://twitter.com/shcjp4869570"><img src="image/icons8-twitter-(丸型)-48.png" alt="twitterアイコン"></a>
+                                <a href="https://www.instagram.com/s.t536tjktmp/"><img src="image/icons8-インスタグラム-48.png" alt="instagramアイコン"></a>
+                            </div>
+                            <div class="profile-text">
+                                <p>高校卒業から9年間工場勤めていましたが読書を通じて価値観が変化し、プログラミング学習をはじめました。<br>読書が趣味でインプットした内容で感銘を受けた箇所や感想などを読書記録としてSNSで発信しています。</p>
+                            </div>
+                        </div>
+                        <div class="sub">
+                            <h2 class="sub-heading">LT会:2021年4月17日<br>これは有益だからおすすめしたい本</h2>
+                            <img class="Purezentēshon" src="image/IMG_4275.jpg" alt="プレゼン風景"></h2>
+                            <p class="slide"><a href="https://speakerdeck.com/code5704869begin/tian-wei-xiang-ping">実際に使用したスライドはこちら<img src="image/iconmonstr-arrow-32-16.png"> </a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                     <!------------------- Work Section ----------------------->
+            <section class="work mainContent__cat">
+                <h2 class="mainContent__title" id="work">WORK</h2>
+                
+                <ul class="slider">
+                    <li>  
+                        <a href="sample.site/Home.html"><img src="image/sample1.jpg" alt="サンプルサイト1"></a>
+                        <p class="slider-text">架空企業模写サイト1</p>
+                    </li>
+                    <li>
+                        <a href="sample2.site/index1.html"><img src="image/sample2.jpg" alt="サンプルサイト2"></a>
+                        <p class="slider-text">架空企業模写サイト2</p>
+                    </li>
+                    <li>
+                        <a href="https://shoucode3156894heibegin.github.io/sample_site3/">
+                        <img src="image/toplogo.png" alt="サンプルサイト3"></a>
+            
+                        <p class="slider-text">架空ブランド模写サイト</p></li>
+                    <li>
+                        <a href="dou_yoroi/index.html">
+                        <img class="work-img-ninja" src="image/ninnjacodesamplesite.png" alt="忍者CODE模写サイト">
+                        </a>                 
+                        <p class="slider-text">忍者CODE銅の鎧<br>模写サイト</p></li>
+                </ul>
+            </section>
+            <!-- ----------------------------contact--------------------- -->
+            <section class="contact mainContent__cat">
+                <h2 class="mainContent__title" id="contact">Contact</h2>
+                <div class="contact__cat">
+                    <div class="mainContent__inner">
+                        <form name="contact" id="valForm">
+                            <dl class="contact__item">
+                                <dt><label for="name" class="contact__label">Name</label></dt>
+                                <dd><input type="text" name="name" id="name" placeholder="example：tonton Satou " value=""></dd>
+                            </dl>
+                            <dl class="contact__item">
+                                <dt><label for="mail" class="contact__label">Mail</label></dt>
+                                <dd><input type="email" name="mail" id="mail" placeholder="example：tonton@example.com" value=""></dd>
+                            </dl>
+                            <dl class="contact__item">
+                                <dt><label for="tel" class="contact__label">Tel</label></dt>
+                                <dd><input type="tel" name="tel" id="tel" placeholder="example：09001234567" value=""></dd>
+                            </dl>
+                            <dl class="contact__item">
+                                <dt><label for="textarea">Contacts</label></dt>
+                                <dd><textarea name="textarea" id="textarea" placeholder="Please enter your inquiry" cols="30" rows="10" value=""></textarea></dd>
+                            </dl>
+                            <button class="contact__btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+                    
+                    </div>
+                </div>
+            </section>
+                
+        </section>
+    </main>
+
+    <!------------------------------------------ フッター --------------------------------------->
+    <footer class="footer">
+        <p> Copyright©️   shouhei.portforio.Design by:<a href="https://icons8.jp/">https://icons8.jp/</a></p>
+    </footer>
+
+    <!-- ---------------------------------scriptエリア----------------------------------- -->
+    <!-- --------------------------------jquery cdn読み込み -------------------------->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function() {
+        //スムーズスクロール
+        let runScroll = function() {
+            $('a[href^="#"]').click(function() {
+                let speed = 400;
+                let href = $(this).attr("href");
+                let $target = $(href == "#" || href == "" ? 'html' : href);
+                let position = $target.offset().top - 100;
+
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        };
+
+        // ハンバーガーメニューチェックボックス外す処理
+        let unlockCheckBox = function() {
+            let $trigger = $('.header__navi a');
+            let $target = $('input[type="checkbox"]');
+
+            $trigger.click(function() {
+                $target.prop('checked', false);
+            });
+        };
+
+        // Document Ready
+            runScroll();
+            unlockCheckBox();
+        });
+    </script>
+                    <!------------------------ workスライドショー ----------------------------------->
+    <script>
+                $('.slider').slick({
+                autoplay: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '<div class="slick-prev"></div>',
+                nextArrow: '<div class="slick-next"></div>',
+                centerMode: true,
+                variableWidth: true,
+                dots: true,
+                });
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
+</body>
+
+</html>

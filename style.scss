@@ -1,0 +1,511 @@
+/* resetCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: europa,"Yu Gothic",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(000,000,000,.5);
+}
+.header__bg {
+    padding: 30px;
+}
+.header__logo a {
+    font-family: cursive;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.header__cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__cat input,
+.header__cat label {
+    display: none;
+}
+.header__navi__list {
+    display: flex;
+}
+.header__navi__item span {
+    position: relative;
+}
+.header__navi__item span:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    opacity: 0;
+    transition: all .8s cubic-bezier(.19,1,.22,1);
+    transition-timing-function: cubic-bezier(.19,1,.22,1);
+}
+.header__navi__item:hover span:after {
+    opacity: 1;
+    left: 0;
+    width: 100%;
+}
+.header__navi a {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+//---------------------------------- メインカテゴリー ------------
+.mainKv {
+    position: relative;
+    background-image: url(image/elly20160628465420_TP_V.jpg);
+    background-position: center right;
+    width: 100%;
+    height: 80vh;
+    min-height: 660px;
+}
+.mainKv__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainKv__title {
+    font-family: fantasy;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 10px 10px 5px #000;
+}
+
+
+/* メインコンテンツ */
+// ------------------------------skills-----------------
+.mainContent__inner {
+    max-width: 1080px;
+    margin: auto;
+    padding: 120px 0 0;
+}
+.mainContent__cat {
+    margin-bottom: 120px;
+}
+.mainContent__title {
+    font-family: fantasy;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.mainContent__title:after {
+    content: "";
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    border-bottom: 2px solid;
+}
+.skills__cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills__img {
+    width: calc(50% - 40px);
+}
+.skills__img > img {
+    width: 100%;;
+}
+    //  --------------------------------- about section-------------------------------------
+.about-area{
+height:650px;
+}
+a:hover{
+color:$base-color
+}
+:after{
+content: "";
+transform: translateX(-50%);
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 90px;
+height: 2px;
+border-bottom: 2px solid;
+}
+.profile-wrapper{
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-left: 20%;
+}
+.photo{
+    border-radius: 50%;
+    width:30%;
+    height: 30%;
+    float: left;
+}
+.profile{
+    width:300px;
+    float: left;
+}
+.profile-text{
+    color:#666666;
+    font-size: 1.1em;
+    width: 95%;
+}
+.profile-heading{
+    font-size: 1.4em;
+    padding: 15% 0 10% 12%;
+    display: inline-block;
+
+    img{
+    width:30%;
+    color: #666666;
+    padding-right:3%;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+    img:hover{
+    opacity:1;
+}
+}
+
+.sub{
+    float:left;
+    width:210px;
+    margin-left:45px;
+    
+
+    img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 1%;
+}
+}
+.sub-heading{
+    font-size: 1.2em;
+    padding-bottom: 10%;
+    text-align: center;
+    background: linear-gradient(transparent 60%,#c67978 128%);
+
+    a:hover{
+        color:#90b1aa;
+    }
+}
+.sub-text{
+    padding-bottom:10%;
+    font-size: 1.1em;
+}
+.sub-text a {
+    color:#cba38c;
+}
+.slide{
+    font-size: 14px;
+    font-weight: bold;
+    top:16.9em;
+    left:3em;
+    text-align:center;
+    background: linear-gradient(transparent 60%, #c67978 128%);
+}
+.slide:hover{
+    opacity: 0.7;
+    color:$base-color;
+}
+
+// -------------------------------contact---------------------
+.contact .contact__item {
+    margin-bottom: 40px;
+}
+.contact dt {
+    margin-bottom: 8px;
+}
+.contact .contact__label:after {
+    content: "*";
+    margin-left: 8px;
+    color: red;
+}
+.contact input {
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.contact textarea {
+    padding: 24px;
+    border: 1px solid #eeeeee;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    height: auto;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    font-weight: normal;
+}
+.contact__btn {
+    cursor: pointer;
+    background: #fff;
+    color: #555;
+    border: 1px solid #cdcdcd;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 40px;
+    display: block;
+    margin: 108px auto 0;
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+}
+.contact__btn:hover {
+    color: #fff;
+    background: #555;
+}
+
+/* -------------------------------footer----------------------------- */
+.footer {
+p {
+    padding: 16px;
+    font-size: .8rem;
+    text-align: center;
+ }
+}
+
+/* ---------------------------------レスポンシブ-------------------- */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    /*--- ヘッダー --*/
+    .header__bg {
+        padding: 10px;
+    }
+    .header__logo a {
+        font-size: 1.2rem;
+    }
+
+    /* ヘッダーハンバーガーメニュー */
+    .header__cat input,
+    .header__cat label {
+        display: block;
+    }
+    .header__cat input {
+        display: none;
+    }
+    .header__cat label {
+        position: absolute;
+        right: 10px;
+        clear: both;
+    }
+    span.hamburger__icon {
+        display: inline-block;
+        width: 35px;
+        height: 25px;
+    }
+    span.hamburger__icon i {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        display: block;
+        transition: all .3s ease-in-out;
+    }
+    span.hamburger__icon i:nth-child(1) {
+        top: 0;
+    }
+    span.hamburger__icon i:nth-child(2) {
+        margin: auto;
+        top: 0;
+        bottom: 0;
+    }
+    span.hamburger__icon i:nth-child(3) {
+        bottom: 0;
+    }
+    .header__cat input:checked + label span.hamburger__icon i:nth-child(1) {
+        margin: auto;
+        transform: rotate(45deg);
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+    }
+    .header__cat input:checked + label span.hamburger__icon i:nth-child(2) {
+        transform: rotateX(90deg);
+        top: 0;
+        bottom: 0;
+    }
+    .header__cat input:checked + label span.hamburger__icon i:nth-child(3) {
+        margin: auto;
+        transform: rotate(-45deg);
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .header__cat input:checked ~ .header__navi {
+        z-index: 99;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .header__navi {
+        position: fixed;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 50px;
+        right: 0;
+        transform: translateX(100%);
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 1s ease-out;
+    }
+    .header__navi__wrap {
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        bottom: 0;
+        transition-duration: 1s;
+        transition-property: right;
+        overflow-y: scroll;
+    }
+    .header__cat input:checked ~ .header__navi .header__navi__wrap {
+        right: 0;
+    }
+    .header__navi__list {
+        margin: 0;
+        display: block;
+        justify-content: inherit;
+    }
+    .header__navi__item {
+    border-bottom: 1px solid #000;
+
+            a {
+                padding: 0 50px;
+                color: #000;
+                font-size: 24px;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                font-weight: 700;
+                line-height: 1;
+                transition: background-color .3s ease-in-out;
+            }
+    }
+    // ------------------メインカテゴリー ----------------------- */
+    .mainKv__title {
+        width: 100%;
+        text-align: center;
+    }
+    .mainKv__title h1 {
+        font-size: 2.6rem;
+    }
+
+    /*------------------------------------- メインコンテンツ---------------------------------- */
+    .mainContent__cat {
+        margin-bottom: 60px;
+    }
+    /*   -------------------------- skills------------------------------------------ */
+    .skills__list ul:after {
+        content: "";
+        clear:both;
+        display:block;
+        }
+    .skills__list {  
+        ul li {
+        display:block;
+        float:left;
+        margin-bottom:2.87%;
+        width:48.56%;
+        margin-right:2.88%;
+        }
+    }
+    .skills__cat {
+        display: block;
+    }
+    .skills__img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

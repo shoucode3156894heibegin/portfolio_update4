@@ -1,0 +1,733 @@
+@charset "UTF-8";
+/* resetCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: europa, "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__bg {
+  padding: 30px;
+}
+
+.header__logo a {
+  font-family: cursive;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.header__cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__cat input,
+.header__cat label {
+  display: none;
+}
+
+.header__navi__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__navi__item span {
+  position: relative;
+}
+
+.header__navi__item span:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header__navi__item:hover span:after {
+  opacity: 1;
+  left: 0;
+  width: 100%;
+}
+
+.header__navi a {
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.mainKv {
+  position: relative;
+  background: url(image/elly20160628465420_TP_V.jpg) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  min-height: 660px;
+}
+
+.mainKv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mainKv__title {
+  font-family: fantasy;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 10px 10px 5px #000;
+}
+/* メインコンテンツ */
+.mainContent {
+  background-color:#ececec;
+}
+/* ---------------------SKILLS---------------- */
+.mainContent__inner {
+  max-width: 1080px;
+  margin: auto;
+  padding: 120px 0 0;
+}
+.skills{
+  border-top: 6px solid #cfa89f;
+}
+.mainContent__cat {
+  margin-bottom: 120px;
+}
+
+.mainContent__title {
+  font-family: fantasy;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mainContent__title:after {
+  content: "";
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  border-bottom: 2px solid;
+}
+.skills__cat {
+  display: flex;
+  width:100%;
+}
+.skills__img  {
+  margin:30px;
+  display:inline;
+} 
+.skills__img__logo{
+  width:100%;
+  margin:15px;
+}
+.skills__img__text{
+  text-align:center;
+  font-weight: bold;
+}
+
+ /* --------------------------------- about ------------------------------------ */
+ .about-area{
+  height:650px;
+  }
+  .profile-wrapper{
+      height: 100%;
+      width: 100%;
+      display: block;
+      padding-left: 20%;
+  }
+  .photo{
+      border-radius: 50%;
+      width:30%;
+      height: 30%;
+      float: left;
+  }
+  .profile{
+      width:300px;
+      float: left;
+  }
+  .profile-text{
+      color:#666666;
+      font-size: 1.1em;
+      width: 100%;
+  }
+  .profile-heading{
+      font-size: 1.4em;
+      padding: 15% 0 10% 12%;
+      display: inline-block;
+      color: #666666;
+      font-weight:bold;
+  }
+  .profile-heading img{
+    width:45%;
+    color: #666666;
+    padding-right:3%;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .profile-heading img:hover{
+      opacity:1;
+  }
+  .sub{
+      float:left;
+      width:380px;
+      margin-left: 40px;
+  }
+  .Purezentēshon{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 1%;
+  }
+  .sub-heading{
+      font-size: 20px;
+      text-align: center;
+      font-weight:bold;
+      color: #666666;
+  }
+  .slide{
+      font-size: 20px;
+      font-weight: bold;
+      text-align:center;
+      text-decoration:none;
+  }
+  .slide a{
+    text-decoration: none;
+    color: #666666;
+  }
+  .slide a:hover{
+      opacity: 0.7;
+      color:#c67978 ;
+  }
+  .slide img {
+    width:16px;
+  }
+  /*----------------- work -----------------------*/
+  .work{
+    padding:50px;
+  }
+  .work-area {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .work-area h3 {
+    font-size: 2em;
+    padding-top: 3.5%;
+  }
+  #work-hedding {
+    font-family: fantasy;
+    padding-top: 10%;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+  }
+  #work-hedding a:hover {
+    color: #cba38c;
+  }
+  #work-hedding :after {
+    content: "";
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 90px;
+    height: 2px;
+    border-bottom: 2px solid;
+  }
+  .work-img-ninja{
+    width:100px
+  }
+  /*-------------------------------------スライダーのためのCSS-----------------------------------*/
+.slider {
+  width:94%;
+  margin:0 auto;
+}
+.slider img {
+  width:60vw;
+  height:auto;
+}
+.slider .slick-slide {
+transform: scale(0.8);
+transition: all .5s;
+opacity: 0.5;
+}
+.slider .slick-slide.slick-center{
+transform: scale(1);
+opacity: 1;
+}
+/*----------------------------------矢印の設定------------------------*/
+.slick-prev, 
+.slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  height: 15px;
+  width: 15px;
+}
+/*-----------------------------戻る矢印の位置と形状--------------------------*/
+.slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+/*---------------------------次へ矢印の位置と形状------------------------------*/
+.slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+/*----------------------------ドットナビゲーションの設定--------------------*/
+.slick-dots {
+  text-align:center;
+margin:20px 0 0 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+margin:0 5px;
+}
+/*---------------ドットボタンのサイズ--------------*/
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width:8px;
+  height:8px;
+  display:block;
+  border-radius:50%;
+  background:#ccc;
+}
+/*-------------------------ドットボタンの現在地表示の色----------------------*/
+.slick-dots .slick-active button{
+  background:#333;
+}
+  /*------------------------- contact--------------- */
+.contact .contact__item {
+  margin-bottom: 40px;
+}
+
+.contact dt {
+  margin-bottom: 8px;
+}
+
+.contact .contact__label:after {
+  content: "*";
+  margin-left: 8px;
+  color: red;
+}
+
+.contact input {
+  height: 50px;
+  padding: 12px;
+  border: 1px solid #eeeeee;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.contact textarea {
+  padding: 24px;
+  border: 1px solid #eeeeee;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  height: auto;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  font-weight: normal;
+}
+
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  font-weight: normal;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  font-weight: normal;
+}
+
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
+  font-weight: normal;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-weight: normal;
+}
+
+.contact__btn {
+  cursor: pointer;
+  background: #fff;
+  color: #555;
+  border: 1px solid #cdcdcd;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 40px;
+  display: block;
+  margin: 108px auto 0;
+  width: 300px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+.contact__btn:hover {
+  color: #fff;
+  background: #555;
+}
+
+/* -------------------------------footer----------------------------- */
+.footer{
+  background-color:#eee;
+}
+.footer p {
+  padding: 25px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.footer a{
+  text-decoration:none;
+}
+.footer a:hover{
+  color:#c67978 ;
+}
+
+/* ---------------------------------レスポンシブ-------------------- */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  /*--- ヘッダー --*/
+  .header__bg {
+    padding: 10px;
+  }
+
+  .header__logo a {
+    font-size: 1.2rem;
+  }
+
+  /* ヘッダーハンバーガーメニュー */
+  .header__cat input,
+.header__cat label {
+    display: block;
+  }
+
+  .header__cat input {
+    display: none;
+  }
+
+  .header__cat label {
+    position: absolute;
+    right: 10px;
+    clear: both;
+  }
+
+  span.hamburger__icon {
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+  }
+
+  span.hamburger__icon i {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  span.hamburger__icon i:nth-child(1) {
+    top: 0;
+  }
+
+  span.hamburger__icon i:nth-child(2) {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  span.hamburger__icon i:nth-child(3) {
+    bottom: 0;
+  }
+
+  .header__cat input:checked + label span.hamburger__icon i:nth-child(1) {
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .header__cat input:checked + label span.hamburger__icon i:nth-child(2) {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    top: 0;
+    bottom: 0;
+  }
+
+  .header__cat input:checked + label span.hamburger__icon i:nth-child(3) {
+    margin: auto;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .header__cat input:checked ~ .header__navi {
+    z-index: 99;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .header__navi {
+    position: fixed;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 50px;
+    right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  .header__navi__wrap {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-property: right;
+    transition-property: right;
+    overflow-y: scroll;
+  }
+
+  .header__cat input:checked ~ .header__navi .header__navi__wrap {
+    right: 0;
+  }
+
+  .header__navi__list {
+    margin: 0;
+    display: block;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+
+  .header__navi__item {
+    border-bottom: 1px solid #000;
+  }
+  .header__navi__item a {
+    padding: 0 50px;
+    color: #000;
+    font-size: 24px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 700;
+    line-height: 1;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .mainKv__title {
+    width: 100%;
+    text-align: center;
+    font-size:40px;
+  }
+
+  .mainKv__title h1 {
+    font-size: 2.6rem;
+  }
+
+  /*------------------------------------- メインコンテンツ---------------------------------- */
+  .mainContent__cat {
+    margin-bottom: 60px;
+  }
+  /*   -------------------------- skills----------------------------------------- */
+
+  .skills__img {
+    width:55px;
+   margin:10px;
+  }
+  .skills__img__logo{
+    margin:0 auto;
+  }
+  .skills__img__text {
+    font-size:10px;
+  }
+  /* ----------------------------------about -----------------------------*/
+  .profile-wrapper{
+    width:100%;
+  }
+  .about-area{
+    height:1100px;
+    display:block;
+  }
+  .profile {
+    position:absolute;
+  }
+  .sub {
+    position:relative;
+    top: 450px;
+    right: 100px;
+    margin-left:20px;
+    text-align:center;
+  }
+  .Purezentēshon {
+   width:350px;
+  }
+  .slide {
+    padding:0;
+  }
+  /* -----------------------------------------work----------------------------- */
+
+  /* --------------------------------------contact----------------- */
+
+  /* -------------------------------footer----------------------- */
+  .footer p{
+    width: 100%;
+    font-size: 12px;
+  }
+  .footer a{
+    text-decoration:none;
+  }
+  .footer a:hover{
+    color:#c67978 ;
+  }
+}
+/*# sourceMappingURL=style.css.map */
