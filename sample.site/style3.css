@@ -1,0 +1,138 @@
+h1,h2,h3,h4,ul,li{
+    margin: 0px;
+    padding: 0px;
+    font-weight:normal;
+    font-size: 100%;
+}
+body{
+    /* color:#666;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+}
+.container{
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 3%;
+        height: 100px;
+}
+   
+header{
+    text-align:center;
+}
+.logo{
+    width:400px;
+    margin: 30 auto;
+    padding: 35px 0 35px 0 ;
+}
+nav ul li {
+    list-style:none;
+    display:inline;
+}
+nav {
+    text-align:center;
+    margin-bottom:30px;
+}
+nav li a{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+}
+nav li a:hover{
+    border-bottom: 4px solid #D08047;
+}
+.contents{
+
+}
+h2{
+    font-size: 16px;
+    color: #fff;
+    background-color:#D08047;
+    clear: both;
+    margin: 20px 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.ta1, .ta1 td, .ta1 th {
+    word-break: break-all; 
+     border: 1px solid #999;
+     padding: 10px;
+ }
+ .ta1 {
+     table-layout: fixed;
+     width: 100%;
+     margin: 0 auto 20px;
+ }
+ table {
+    border-collapse: collapse;
+    font-size: 100%;
+    border-spacing: 0;
+}
+ .ta1 caption{
+     border: 1px solid #999;
+     border-bottom:none;
+     border-bottom-width: initial;
+     border-bottom-style: none;
+     border-bottom-color: initial;
+     text-align: left;
+     background: #eee;
+     font-weight: bold;
+     padding: 10px;
+ }
+ tr {
+     display: table-row;
+     vertical-align: inherit;
+     border-color: inherit;
+ }
+ .ta1 th {
+     text-align: center;
+     width: 30%; 
+ }
+ h3{
+    font-size: 16px;
+    color:#666;
+    background-color:#fff;
+    clear: both;
+    margin: 20px 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+ }
+ .contents p {
+    padding: 0px 20px 20px;
+}
+#contents h2 + p, #contents h3 + p {
+    margin-top: -10px;
+}
+ .look{
+    font-size: 16px;
+    color: #666666;
+    background-color:#e5e5e5;
+    clear: both;
+    margin: 20px 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+ }
+.color1{
+    color:#d08046;
+}
+a{
+    color:#666;
+}
+   a:hover{
+    color:#D08047;
+}
+ footer{
+    text-align:center;
+    font-size:15px;
+    margin-top: 40px;
+}
+.pr {
+    font-size:12px;
+}
+footer a{
+    text-decoration: none;
+    color:#666;
+}
+footer a:hover{
+    color:#D08047;
+}
